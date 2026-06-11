@@ -1,0 +1,16 @@
+{
+  "name": "od-faq-chatbot",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Local development tooling for the OD FAQ Chatbot WordPress plugin.",
+  "scripts": {
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "env:destroy": "wp-env destroy",
+    "env:cli": "wp-env run cli wp",
+    "lint:php": "find . -name \"*.php\" -not -path \"./vendor/*\" -not -path \"./node_modules/*\" -print0 | xargs -0 -n1 php -l"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^11.8.0"
+  }
+}

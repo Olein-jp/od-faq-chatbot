@@ -1,0 +1,27 @@
+{
+  "name": "olein/od-faq-chatbot",
+  "version": "0.0.1",
+  "description": "FAQ chatbot plugin for WordPress.",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0-or-later",
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "squizlabs/php_codesniffer": "^3.10",
+    "wp-coding-standards/wpcs": "^3.1"
+  },
+  "scripts": {
+    "lint": "phpcs",
+    "phpcs": "phpcs",
+    "phpcbf": "phpcbf"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "sort-packages": true
+  },
+  "require": {
+    "inc2734/wp-github-plugin-updater": "^3.1"
+  }
+}
